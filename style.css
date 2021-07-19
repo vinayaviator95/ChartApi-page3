@@ -4,7 +4,36 @@ body {
   margin: 0;
   background-color: #071828 !important;
 }
+/* navbar */
+.navtopdesktop {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #404041;
+  margin-bottom: 1.5rem;
+}
+.navtopdesktop button {
+  color: white;
+  border: none;
+  background-color:#404041;
+}
+.companyname a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.companyname a:hover{
+  color: white;
+}
+.navtopdesktop ul li {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
 
+/* navbar end */
 .horline {
   margin: 0;
 
@@ -15,6 +44,7 @@ body {
   /* border: 1px solid black; */
   border-radius: 10px;
   /* padding: 5px; */
+  margin-bottom: 1.4rem;
 }
 
 .card-head-wrapper {
@@ -108,16 +138,72 @@ body {
 }
 
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.navtopdesktop{
+  display: none;
+}
+.navmobile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#404041;
+  color: white;
+  font-size: 1.5rem;
+}
+.navmobile button{
+  color: white;
+  border: none;
+  background-color:#404041;
+}
+.navmobile a{
+  text-decoration: none;
+  color: white;
+}
+.mobiledropdown li{
+display: flex;
+color: white;
+align-items: center;
+justify-content: center;
+padding: .5rem;
+background-color:#404041;
 
+}
+.mobiledropdown{
 
+  padding-right: 0px !important;
+  padding-left: 0px!important;
 
+}
+.displ{
+  display: none;
+}
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+.navmobile{
+  display: none;
+}
+.mobiledropdown{
+  display: none;
+}
+}
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 
+}
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 
+}
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 
+}
 
 
 
@@ -209,11 +295,11 @@ body {
   width: 30%;
   background-color: #1c2d3d;
 }
-.box1{
-height: 25vh;
+.box1 {
+  height: 25vh;
 }
-.box2{
-    height: 25vh;
+.box2 {
+  height: 25vh;
 }
 .mainbodywrap {
   display: flex;
@@ -274,10 +360,10 @@ height: 25vh;
   justify-content: space-evenly;
   align-items: center;
 }
-.box-2-dropdown{
-    height: 5vh;
-    margin-top: 1rem;
-    display: flex;
+.box-2-dropdown {
+  height: 5vh;
+  margin-top: 1rem;
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
@@ -293,21 +379,20 @@ height: 25vh;
 .barchartdiv {
   background-color: #1c2d3d;
 }
-.chart1{
-    height: 35vh;
+.chart1 {
+  height: 35vh;
 }
-.chart2{
-    height: 35vh;
+.chart2 {
+  height: 35vh;
 }
-.pieChartcanvasdiv{
-    height: 32vh;
+.pieChartcanvasdiv {
+  height: 32vh;
 }
-.chart3{
-    margin-top: 2rem;
-
+.chart3 {
+  margin-top: 2rem;
 }
-.barchartdiv{
-    height: 42vh;
+.barchartdiv {
+  height: 42vh;
 }
 /* 
 .center_text {
