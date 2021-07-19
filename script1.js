@@ -1,3 +1,10 @@
+const mobilebtn = document.querySelector(".mobilebtn")
+const mobiledropdown = document.querySelector(".mobiledropdown")
+
+mobilebtn.addEventListener("click", ()=>{
+    mobiledropdown.classList.toggle("displ")
+})
+
 const chart1 = document.getElementById("myChart1");
 
 var myChart = new Chart(chart1, {

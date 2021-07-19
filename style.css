@@ -54,7 +54,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: red;
+  background-color: #dc0000;
   color: white;
   border-radius: 10px 10px 0 0;
   padding: 0.5rem 0.5rem;
@@ -130,7 +130,7 @@ body {
 }
 
 .offbtn {
-  background-color: red;
+  background-color: #dc0000;
   color: white;
   font-size: 0.5rem;
   padding: 2px;
@@ -140,7 +140,14 @@ body {
   font-weight: 800;
 }
 
-
+/* .chart4{
+height: 7rem;
+width: 7rem;
+}
+.chart5{
+  height: 7rem;
+  width: 7rem;
+} */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 .navtopdesktop{
@@ -174,8 +181,8 @@ background-color:#404041;
 }
 .mobiledropdown{
 
-  padding-right: 0px !important;
-  padding-left: 0px!important;
+  padding-right: 0px;
+  padding-left: 0px;
 
 }
 .displ{
@@ -191,9 +198,45 @@ background-color:#404041;
 .mobiledropdown{
   display: none;
 }
-}
-@media only screen and (max-width: 700px) {
 
+}
+@media only screen and (max-width: 767px) {
+  .topbtn1{
+    background-color: white;
+    color: black;
+    border-radius: .3rem;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    }
+    .topbtn2{
+      background-color: white;
+    color: black;
+    border-radius: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    }
+    .topbtn3{
+      background-color: white;
+      color: black;
+      border-radius: .3rem;
+      cursor: pointer;
+      margin-bottom: .5rem;
+    }
+    .mainbodyleft {
+      width:100%;
+      background-color: #1c2d3d;
+      margin-bottom: 2rem;
+    }
+    .chart1 {
+      margin-bottom: 2rem;
+    }
+    .chart2 {
+      margin-bottom: .5rem;
+    }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -332,7 +375,7 @@ cursor: pointer;
 }
 
 .offbtn1 {
-  background-color: red;
+  background-color: #dc0000;
   color: white;
   font-size: 1rem;
   padding: 2px;
@@ -407,6 +450,7 @@ cursor: pointer;
   width: 4rem;
   background-color: white;
   color: #dc0000;
+  border-radius: .2rem;
 }
 
 .box-1-rightwrap {
