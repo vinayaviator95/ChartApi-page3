@@ -27,22 +27,55 @@
   </head>
   <body>
     <!-- navbar start-->
-    <div></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col navtopdesktop">
+          <button>Overall Status</button>
+          <div class="companyname"><a href="#">COMPANY NAME</a></div>
+          <ul>
+            <li><i class="fas fa-desktop"></i></li>
+            <li><i class="fas fa-cogs"></i></li>
+            <li><i class="fas fa-info"></i></li>
+            <li><i class="fas fa-bell"></i></li>
+            <li><i class="fas fa-backward"></i></li>
+          </ul>
+        </div>
+        <!-- mobilenavbar start-->
+        <div class="col navmobile">
+          <!-- <button>Overall Status</button> -->
+          <div class="companynamemobile"><a href="#">COMPANY NAME</a></div>
+          <div><i class="fas fa-bars mobilebtn"></i></div>
+        </div>
+        <ul class="mobiledropdown displ">
+          <li>Overall Status</li>
+          <li><i class="fas fa-desktop"></i></li>
+          <li><i class="fas fa-cogs"></i></li>
+          <li><i class="fas fa-info"></i></li>
+          <li><i class="fas fa-bell"></i></li>
+          <li><i class="fas fa-backward"></i></li>
+        </ul>
+      </div>
+    </div>
     <!-- navbar end -->
 
     <!-- row1 start -->
-    <div class="row1">
-      <div><span>Machine 1</span></div>
-      <div><span> Machine</span><span>ON</span><span>OFF</span></div>
-      <div><span>Select Job</span></div>
+    <div class="container-fluid">
+      <div class="row topbtn">
+        <div class="col-2 topbtn1"><span>Machine 1</span></div>
+        <div class="col-2 topbtn2">
+          <span> Machine</span
+          ><span><i class="fas fa-power-off onbtn1"></i>ON</span
+          ><span><i class="fas fa-power-off offbtn1"></i>OFF</span>
+        </div>
+        <div class="col-2 topbtn3"><span>Select Job</span></div>
+      </div>
     </div>
+
     <!-- row1 end -->
-    <!-- bodymain start -->
-    <div class="mainbodywrap">
-      <!-- left start-->
-      <div class="mainbodyleft">
-        <div class="row">
-          <div class="col">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4">
+          <div class="mainbodyleft">
             <div class="box1">
               <div class="box-heading">
                 <div class="box-head-left">Component Count</div>
@@ -115,10 +148,128 @@
             </div>
           </div>
         </div>
+        <div class="col-8">
+          <div class="mainbodyright">
+            <div class="container-fluid">
+              <div class="row rightrow1">
+                <div class="col-6">
+                  <div class="chart1">
+                    <div class="piechart-headingdiv">
+                      <span>Production Chart</span>
+                    </div>
+                    <div class="pieChartcanvasdiv">
+                      <canvas id="myChart1"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="chart2">
+                    <div class="piechart-headingdiv">
+                      <span>Machine Usage Chart</span>
+                    </div>
+                    <div class="pieChartcanvasdiv">
+                      <canvas id="myChart2"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row rightrow2">
+                <div class="col">
+                  <div class="chart3">
+                    <div class="barchartdiv">
+                      <canvas id="myChart3"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <!-- bodymain start -->
+    <!-- <div class="mainbodywrap"> -->
+      <!-- left start-->
+      <!-- <div class="mainbodyleft">
+        <div class="row">
+          <div class="col">
+            <div class="box1">
+              <div class="box-heading">
+                <div class="box-head-left">Component Count</div>
+                <div class="box-head-right">LIVE</div>
+              </div>
+
+              <div class="box-1-main">
+                <div class="box-1-leftwrap">
+                  <div class="box-1-line1">
+                    <div class="box-1-line1left">Component Count</div>
+                    <div class="box-1-line1right">200</div>
+                  </div>
+                  <div class="box-1-line1">
+                    <div class="box-1-line1left">Rejection Count</div>
+                    <div class="box-1-line1right">20</div>
+                  </div>
+                </div>
+                <div class="box-1-rightwrap">
+                  <div class="chart4"> -->
+                    <!-- <div class="center_text">99%</div> -->
+                    <!-- <canvas id="myChart4"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box2">
+              <div class="box-heading">
+                <div class="box-head-left">Historic Data</div>
+                <div class="box-head-right">LIVE</div>
+              </div>
+              <div class="box-2-dropdown">
+                <div class="box-1-dropdownleft">
+                  <select name="months" id="months">
+                    <option value="">Month</option>
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                  </select>
+                </div>
+                <div class="box-1-dropdownright">
+                  <select name="year" id="year">
+                    <option value="">Year</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <div class="box-1-main">
+                  <div class="box-1-leftwrap">
+                    <div class="box-1-line1">
+                      <div class="box-1-line1left">Component Count</div>
+                      <div class="box-1-line1right">200</div>
+                    </div>
+                    <div class="box-1-line1">
+                      <div class="box-1-line1left">Rejection Count</div>
+                      <div class="box-1-line1right">20</div>
+                    </div>
+                  </div>
+                  <div class="box-1-rightwrap">
+                    <div class="chart5"> -->
+                      <!-- <div class="center_text">99%</div> -->
+                      <!-- <canvas id="myChart5"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
       <!-- left end -->
       <!-- Right start-->
-      <div class="mainbodyright">
+      <!-- <div class="mainbodyright">
         <div class="container-fluid">
           <div class="row rightrow1">
             <div class="col-6">
@@ -153,7 +304,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- right end -->
     <!-- bodymain end -->
     <script src="script1.js"></script>

@@ -29,8 +29,11 @@ body {
 .navtopdesktop ul li {
   display: inline-block;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: .8rem;
   cursor: pointer;
+}
+.navtopdesktop ul{
+  padding-top: 1rem;
 }
 
 /* navbar end */
@@ -189,7 +192,9 @@ background-color:#404041;
   display: none;
 }
 }
+@media only screen and (max-width: 700px) {
 
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
@@ -286,27 +291,70 @@ background-color:#404041;
 
 /* PAGE 2 and 3  */
 
-.row1 {
+.topbtn {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 600;
+}
+.topbtn1{
+background-color: white;
+color: black;
+border-radius: .3rem;
+cursor: pointer;
+}
+.topbtn2{
+  background-color: white;
+color: black;
+border-radius: .3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+.topbtn3{
+  background-color: white;
+  color: black;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+.onbtn1 {
+  background-color: rgb(139, 226, 8);
+  color: white;
+  font-size: 1rem;
+  margin-left: .5rem;
+  margin-right: .3rem;
+  padding: 2px;
+}
+
+.offbtn1 {
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  padding: 2px;
+  margin-left: .5rem;
+  margin-right: .3rem;
 }
 .mainbodyleft {
-  width: 30%;
+  width:100%;
   background-color: #1c2d3d;
 }
 .box1 {
-  height: 25vh;
+  height: 28vh;
 }
 .box2 {
-  height: 25vh;
+  height: 35vh;
 }
 .mainbodywrap {
   display: flex;
   justify-content: center;
 }
 .mainbodyright {
-  width: 70%;
+  width:100%;
 }
 
 .box-heading {
@@ -319,11 +367,15 @@ background-color:#404041;
   background-color: #dc0000;
   color: white;
   width: 70%;
+  font-weight: 600;
+  padding-left: 2.5rem;
 }
 
 .box-head-right {
   background-color: white;
   color: black;
+  text-align: center;
+  font-weight: 600;
   width: 30%;
 }
 
@@ -338,15 +390,21 @@ background-color:#404041;
 }
 .box-1-line1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 .box-1-line1left {
   color: white;
-  width: 70%;
+  width: 10rem;
+  /* width: 70%; */
+  margin-bottom: .5rem;
+  /* padding-left: .5rem; */
 }
 .box-1-line1right {
-  width: 30%;
+  text-align: center;
+  font-weight: 600;
+  /* width: 30%; */
+  width: 4rem;
   background-color: white;
   color: #dc0000;
 }
@@ -371,6 +429,9 @@ background-color:#404041;
 .piechart-headingdiv {
   background-color: #dc0000;
   color: white;
+  margin-bottom: .4rem;
+  border-radius: .3rem;
+  text-align: center;
 }
 .pieChartcanvasdiv {
   background-color: #1c2d3d;
@@ -380,19 +441,19 @@ background-color:#404041;
   background-color: #1c2d3d;
 }
 .chart1 {
-  height: 35vh;
-}
-.chart2 {
-  height: 35vh;
-}
-.pieChartcanvasdiv {
   height: 32vh;
 }
+.chart2 {
+  height: 32vh;
+}
+.pieChartcanvasdiv {
+  height: 28vh;
+}
 .chart3 {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 .barchartdiv {
-  height: 42vh;
+  height: 35vh;
 }
 /* 
 .center_text {
