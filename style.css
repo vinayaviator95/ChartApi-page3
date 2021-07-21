@@ -200,6 +200,46 @@ background-color:#404041;
 }
 
 }
+@media only screen and (max-width: 600px) {
+  .navtopdesktop{
+    display: none;
+  }
+  .navmobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#404041;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .navmobile button{
+    color: white;
+    border: none;
+    background-color:#404041;
+  }
+  .navmobile a{
+    text-decoration: none;
+    color: white;
+  }
+  .mobiledropdown li{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+  background-color:#404041;
+  
+  }
+  .mobiledropdown{
+  
+    padding-right: 0px;
+    padding-left: 0px;
+  
+  }
+  .displ{
+    display: none;
+  }
+  }
 @media only screen and (max-width: 767px) {
   .topbtn1{
     background-color: white;
