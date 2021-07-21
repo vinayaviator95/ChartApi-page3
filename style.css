@@ -16,23 +16,23 @@ body {
 .navtopdesktop button {
   color: white;
   border: none;
-  background-color:#404041;
+  background-color: #404041;
 }
 .companyname a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
 }
-.companyname a:hover{
+.companyname a:hover {
   color: white;
 }
 .navtopdesktop ul li {
   display: inline-block;
   font-size: 1.5rem;
-  padding: .8rem;
+  padding: 0.8rem;
   cursor: pointer;
 }
-.navtopdesktop ul{
+.navtopdesktop ul {
   padding-top: 1rem;
 }
 
@@ -150,227 +150,138 @@ width: 7rem;
 } */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-.navtopdesktop{
-  display: none;
-}
-.navmobile{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color:#404041;
-  color: white;
-  font-size: 1.5rem;
-}
-.navmobile button{
-  color: white;
-  border: none;
-  background-color:#404041;
-}
-.navmobile a{
-  text-decoration: none;
-  color: white;
-}
-.mobiledropdown li{
-display: flex;
-color: white;
-align-items: center;
-justify-content: center;
-padding: .5rem;
-background-color:#404041;
-
-}
-.mobiledropdown{
-
-  padding-right: 0px;
-  padding-left: 0px;
-
-}
-.displ{
-  display: none;
-}
+  .navtopdesktop {
+    display: none;
+  }
+  .navmobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #404041;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .navmobile button {
+    color: white;
+    border: none;
+    background-color: #404041;
+  }
+  .navmobile a {
+    text-decoration: none;
+    color: white;
+  }
+  .mobiledropdown li {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background-color: #404041;
+  }
+  .mobiledropdown {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .displ {
+    display: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-.navmobile{
-  display: none;
-}
-.mobiledropdown{
-  display: none;
-}
-
-}
-@media only screen and (max-width: 600px) {
-  .navtopdesktop{
+  .navmobile {
     display: none;
   }
-  .navmobile{
+  .mobiledropdown {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navtopdesktop {
+    display: none;
+  }
+  .navmobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#404041;
+    background-color: #404041;
     color: white;
     font-size: 1.5rem;
   }
-  .navmobile button{
+  .navmobile button {
     color: white;
     border: none;
-    background-color:#404041;
+    background-color: #404041;
   }
-  .navmobile a{
+  .navmobile a {
     text-decoration: none;
     color: white;
   }
-  .mobiledropdown li{
-  display: flex;
-  color: white;
-  align-items: center;
-  justify-content: center;
-  padding: .5rem;
-  background-color:#404041;
-  
+  .mobiledropdown li {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background-color: #404041;
   }
-  .mobiledropdown{
-  
+  .mobiledropdown {
     padding-right: 0px;
     padding-left: 0px;
-  
   }
-  .displ{
+  .displ {
     display: none;
   }
-  }
+}
 @media only screen and (max-width: 767px) {
-  .topbtn1{
+  .topbtn1 {
     background-color: white;
     color: black;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     cursor: pointer;
-    margin-bottom: .5rem;
-    margin-top: .5rem;
-    }
-    .topbtn2{
-      background-color: white;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .topbtn2 {
+    background-color: white;
     color: black;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-bottom: .5rem;
-    }
-    .topbtn3{
-      background-color: white;
-      color: black;
-      border-radius: .3rem;
-      cursor: pointer;
-      margin-bottom: .5rem;
-    }
-    .mainbodyleft {
-      width:100%;
-      background-color: #1c2d3d;
-      margin-bottom: 2rem;
-    }
-    .chart1 {
-      margin-bottom: 2rem;
-    }
-    .chart2 {
-      margin-bottom: .5rem;
-    }
+    margin-bottom: 0.5rem;
+  }
+  .topbtn3 {
+    background-color: white;
+    color: black;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+  }
+  .mainbodyleft {
+    width: 100%;
+    background-color: #1c2d3d;
+    margin-bottom: 2rem;
+  }
+  .chart1 {
+    margin-bottom: 2rem;
+  }
+  .chart2 {
+    margin-bottom: 0.5rem;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* PAGE 2 and 3  */
 
@@ -384,33 +295,33 @@ background-color:#404041;
   text-align: center;
   font-weight: 600;
 }
-.topbtn1{
-background-color: white;
-color: black;
-border-radius: .3rem;
-cursor: pointer;
-}
-.topbtn2{
-  background-color: white;
-color: black;
-border-radius: .3rem;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-}
-.topbtn3{
+.topbtn1 {
   background-color: white;
   color: black;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.topbtn2 {
+  background-color: white;
+  color: black;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.topbtn3 {
+  background-color: white;
+  color: black;
+  border-radius: 0.3rem;
   cursor: pointer;
 }
 .onbtn1 {
   background-color: rgb(139, 226, 8);
   color: white;
   font-size: 1rem;
-  margin-left: .5rem;
-  margin-right: .3rem;
+  margin-left: 0.5rem;
+  margin-right: 0.3rem;
   padding: 2px;
 }
 
@@ -419,11 +330,11 @@ cursor: pointer;
   color: white;
   font-size: 1rem;
   padding: 2px;
-  margin-left: .5rem;
-  margin-right: .3rem;
+  margin-left: 0.5rem;
+  margin-right: 0.3rem;
 }
 .mainbodyleft {
-  width:100%;
+  width: 100%;
   background-color: #1c2d3d;
 }
 .box1 {
@@ -437,7 +348,7 @@ cursor: pointer;
   justify-content: center;
 }
 .mainbodyright {
-  width:100%;
+  width: 100%;
 }
 
 .box-heading {
@@ -480,7 +391,7 @@ cursor: pointer;
   color: white;
   width: 10rem;
   /* width: 70%; */
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   /* padding-left: .5rem; */
 }
 .box-1-line1right {
@@ -490,7 +401,7 @@ cursor: pointer;
   width: 4rem;
   background-color: white;
   color: #dc0000;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 
 .box-1-rightwrap {
@@ -513,8 +424,8 @@ cursor: pointer;
 .piechart-headingdiv {
   background-color: #dc0000;
   color: white;
-  margin-bottom: .4rem;
-  border-radius: .3rem;
+  margin-bottom: 0.4rem;
+  border-radius: 0.3rem;
   text-align: center;
 }
 .pieChartcanvasdiv {

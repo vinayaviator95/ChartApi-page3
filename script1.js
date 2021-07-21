@@ -1,9 +1,9 @@
-const mobilebtn = document.querySelector(".mobilebtn")
-const mobiledropdown = document.querySelector(".mobiledropdown")
+const mobilebtn = document.querySelector(".mobilebtn");
+const mobiledropdown = document.querySelector(".mobiledropdown");
 
-mobilebtn.addEventListener("click", ()=>{
-    mobiledropdown.classList.toggle("displ")
-})
+mobilebtn.addEventListener("click", () => {
+  mobiledropdown.classList.toggle("displ");
+});
 
 const chart1 = document.getElementById("myChart1");
 
@@ -38,8 +38,8 @@ var myChart = new Chart(chart1, {
     plugins: {
       legend: {
         display: true,
-        labels:{
-          color:"rgba(255,255,255, 1)"
+        labels: {
+          color: "rgba(255,255,255, 1)",
         },
         title: "false",
       },
@@ -79,8 +79,8 @@ var myChart1 = new Chart(chart2, {
     plugins: {
       legend: {
         display: true,
-        labels:{
-          color:"rgba(255,255,255, 1)"
+        labels: {
+          color: "rgba(255,255,255, 1)",
         },
         title: "false",
       },
@@ -148,10 +148,9 @@ var myChart = new Chart(chart3, {
     scales: {
       x: {
         stacked: true,
-        ticks:{
-         color:"white",
-         display:true,
-        
+        ticks: {
+          color: "white",
+          display: true,
         },
         grid: {
           display: false,
@@ -161,14 +160,13 @@ var myChart = new Chart(chart3, {
         stacked: true,
         min: 0,
         max: 120,
- ticks:{
-         color:"white",
-         display:true,
-        
+        ticks: {
+          color: "white",
+          display: true,
         },
         grid: {
           display: true,
-          color:'white',
+          color: "white",
         },
       },
     },

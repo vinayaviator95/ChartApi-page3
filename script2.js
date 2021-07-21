@@ -1,9 +1,9 @@
-const mobilebtn = document.querySelector(".mobilebtn")
-const mobiledropdown = document.querySelector(".mobiledropdown")
+const mobilebtn = document.querySelector(".mobilebtn");
+const mobiledropdown = document.querySelector(".mobiledropdown");
 
-mobilebtn.addEventListener("click", ()=>{
-    mobiledropdown.classList.toggle("displ")
-})
+mobilebtn.addEventListener("click", () => {
+  mobiledropdown.classList.toggle("displ");
+});
 
 const chart1 = document.getElementById("myChart1");
 
@@ -38,8 +38,8 @@ var myChart = new Chart(chart1, {
     plugins: {
       legend: {
         display: true,
-        labels:{
-          color:"rgba(255,255,255, 1)"
+        labels: {
+          color: "rgba(255,255,255, 1)",
         },
         title: "false",
       },
@@ -79,8 +79,8 @@ var myChart1 = new Chart(chart2, {
     plugins: {
       legend: {
         display: true,
-        labels:{
-          color:"rgba(255,255,255, 1)"
+        labels: {
+          color: "rgba(255,255,255, 1)",
         },
         title: "false",
       },
@@ -124,14 +124,15 @@ var myChart = new Chart(chart3, {
       "28",
       "29",
       "30",
-      "31"
+      "31",
     ],
     datasets: [
       {
         label: "Hourly Idle time (mins)",
         data: [
-          370.6, 370.6, 350.8, 430.9, 430.9, 200, 380.3, 430.4, 430.8, 390.9, 410.1, 290,
-          100, 200, 100, 300, 500, 400, 100, 100.7, 290.9, 370.2, 200.6, 100, 310, 600, 600, 600, 220, 170, 160,
+          370.6, 370.6, 350.8, 430.9, 430.9, 200, 380.3, 430.4, 430.8, 390.9,
+          410.1, 290, 100, 200, 100, 300, 500, 400, 100, 100.7, 290.9, 370.2,
+          200.6, 100, 310, 600, 600, 600, 220, 170, 160,
         ],
         hoverBackgroundColor: "rgba(59,179,113,255)",
         borderColor: "rgba(59,179,113,255)",
@@ -140,8 +141,9 @@ var myChart = new Chart(chart3, {
       {
         label: "Hourly Production Time (mins)",
         data: [
-          220, 220, 240, 160, 140, 30, 220, 170, 160, 200, 190, 310, 600, 600, 600, 600, 600,
-          110, 200, 150, 210, 230, 140, 200, 430.9, 200, 380.3, 430.4, 370.6, 350.8, 430.9,
+          220, 220, 240, 160, 140, 30, 220, 170, 160, 200, 190, 310, 600, 600,
+          600, 600, 600, 110, 200, 150, 210, 230, 140, 200, 430.9, 200, 380.3,
+          430.4, 370.6, 350.8, 430.9,
         ],
         hoverBackgroundColor: "rgba(175,34,34,255)",
         borderColor: "rgba(175,34,34,255)",
@@ -155,10 +157,9 @@ var myChart = new Chart(chart3, {
     scales: {
       x: {
         stacked: true,
-        ticks:{
-         color:"white",
-         display:true,
-        
+        ticks: {
+          color: "white",
+          display: true,
         },
         grid: {
           display: false,
@@ -168,14 +169,13 @@ var myChart = new Chart(chart3, {
         stacked: true,
         min: 0,
         max: 1200,
- ticks:{
-         color:"white",
-         display:true,
-        
+        ticks: {
+          color: "white",
+          display: true,
         },
         grid: {
           display: true,
-          color:'white',
+          color: "white",
         },
       },
     },
